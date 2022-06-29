@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const api = require("./db");
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/api", (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000/');
