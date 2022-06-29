@@ -4,7 +4,7 @@ const api = require("./db");
 const app = express();
 
 const corsOptions ={
-  origin:'http://localhost:3000', 
+  origin:'https://frontend-pdf.vercel.app/',
   credentials:true,
   optionSuccessStatus:200
 }
